@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffecb3; /* Light Amber */
+    background-image: linear-gradient(45deg, #ffecb3 25%, #ffd54f 25%, #ffd54f 50%, #ffecb3 50%, #ffecb3 75%, #ffd54f 75%, #ffd54f 100%);
+    background-size: 56.57px 56.57px;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff9c4; /* Light Yellow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-image: linear-gradient(to right, #ffe082 0%, #ffcc80 51%, #ffe082 100%);
+    background-size: 200% auto;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+h1 {
+    color: #4a148c; /* Deep Purple */
+}
+
+.upload-section {
+    margin: 20px 0;
+}
+
+.upload-section h2 {
+    color: #00695c; /* Dark Cyan */
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #4a148c; /* Deep Purple */
+    border-radius: 5px;
+    background-color: #ffccbc; /* Light Peach */
+    color: #4a148c; /* Deep Purple */
+    background-image: linear-gradient(to right, #ffab91, #ff8a65);
+    background-size: 200% auto;
+    animation: gradient 4s linear infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-position 0.5s, transform 0.2s;
+}
+
+input[type="file"]:hover {
+    background-position: right center; /* change the direction of the gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #7b1fa2, #ab47bc);
+    background-size: 200% auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-position 0.5s, transform 0.2s;
+}
+
+button:hover {
+    background-position: right center; /* change the direction of the gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+p#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #c62828; /* Red */
+}
